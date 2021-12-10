@@ -6,9 +6,6 @@ process.stdin.on('data', data => {
     for ( let i=0; i<b; i++){
         let result = "";
         result += '*'.repeat(a)
-
         console.log(result);
     } 
-
-
 });
