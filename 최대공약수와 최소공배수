@@ -1,0 +1,15 @@
+function solution(n, m) {
+    let gcd = (n,m) => {
+      while(n >0 ){
+          let x = m%n;
+          m=n;
+          n=x;
+      }
+        return m;
+    };
+    let lcm = (n,m) => {
+       return m*n / gcd(n,m);
+    };
+    
+    return [gcd(n,m), lcm(n,m)];
+}
