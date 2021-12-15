@@ -1,7 +1,7 @@
 function solution(s, n) {
     let arr = s.split('');
     const SfCC = String.fromCharCode;
-    // arr = ['a','','B','','z'];   n=4
+    // arr = ['a','','B','','z']   n=4
     
     for (let i in arr){
         if (arr[i] === 'z')
